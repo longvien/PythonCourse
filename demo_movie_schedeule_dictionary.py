@@ -1,12 +1,12 @@
 movies = {
-    'Harry Potter and the Chamber of Secret': '11:30', 
+   'Harry Potter 2': '11:30', 
     'Rush Hour 3': '12:10', 
     'Home Alone 1': '12:50', 
-    'Harry Potter and the Half Blood Prince': '13:20'
+    'Harry Potter 6': '13:20'
 }
 print('These are the movie that we will play today.')
 
-for movie in movies:
+for movie in range(1):
     print(movies)
 
 movie_choice = input("Please choose one.\n")
