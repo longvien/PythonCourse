@@ -10,7 +10,7 @@ for movie in range(1):
     print(movies)
 
 movie_choice = input("Please choose one.\n")
-showtime = (movies.get(movie_choice))
+showtime = movies.get(movie_choice)
 
 if showtime == None:
     print(("The movie you entered doesn't exist. Please watch another movie!!!"))
