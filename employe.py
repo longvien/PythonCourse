@@ -4,6 +4,6 @@ class Employe:
         self.lname = lname
         self.salary = salary
     def calculate_paycheck(self):
-        return self.salary/26 # salary divide to 52 because we need to 
-    #- calculate the salary of the employee in 2 week    
+        return self.salary/52 # salary divide to 52 because we need to 
+    #- calculate the salary of the employee in 1 week    
     
