@@ -21,15 +21,14 @@
 # main()
 
 
-
 import random
 def roll_dice():
-    roll = random.randint(1, 6) + random.randint(1, 6)
+    roll = random.randint(1, 10) + random.randint(1, 10)
     return roll
 
 def main():
-    player1 = input('Please enter your name\n')
-    player2 = input('Please enter your name\n')
+    player1 = input('Please enter your name:\n')
+    player2 = input('Please enter your name:\n')
         
     roll1 = roll_dice()
     roll2 = roll_dice()
