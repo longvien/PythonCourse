@@ -23,7 +23,7 @@
 
 import random
 def roll_dice():
-    roll = random.randint(1, 10) + random.randint(1, 10)
+    roll = random.randint(1, 6) + random.randint(1, 6)
     return roll
 
 def main():
