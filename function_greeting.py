@@ -22,7 +22,7 @@
 
 
 def addition(a, b):
-    return a + b
+    return a - b
 
 def main():
     F_num = float(input('Enter the 1st number:\n'))
