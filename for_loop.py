@@ -3,6 +3,6 @@
 # Output: ['banana', 'mango', 'cherry']
 # What if we want to print each fruit on a separate line? We need a loop! 
 fruits = ['watermelon', 'jackfruit', 'cherry']
-for i in range(5):#added by myself
+for i in range(2):#added by myself
     for fruit in fruits:
         print(fruit)

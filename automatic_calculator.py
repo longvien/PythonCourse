@@ -23,8 +23,8 @@ elif calculation == '*':
 elif calculation == ':':
     def a(a, b):
         return a/b
-    first_num = float(input('Please enter the first number:\n'))
-    second_num = float(input('Please enter the second number:\n'))
+    first_num = int(float(input('Please enter the first number:\n')))
+    second_num = int(float(input('Please enter the second number:\n')))
     result = a(first_num, second_num)
     print('The result of', first_num, calculation, second_num, 'is', result)
 else:
