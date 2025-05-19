@@ -21,7 +21,7 @@ employee1 = Employe('Manuel', 'Neuer', 5000000)
 my_company.add_employees(employee1)
 employee2 = Employe('Harry', 'Potter', 4000000)
 my_company.add_employees(employee2)
-employee3 = Employe('Julius', 'Weiß', 7000)
+employee3 = Employe('Christian', 'Klein', 700000)
 my_company.add_employees(employee3)
 
 my_company.employees_display()
