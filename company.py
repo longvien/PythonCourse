@@ -4,3 +4,4 @@ class Company:
         self.employees = []
     def add_employee(self, new_employee):
         self.employees.append(new_employee)
+    def display_employees(self):
