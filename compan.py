@@ -19,7 +19,7 @@ class Company:
 my_company = Company()
 employee1 = Employe('Manuel', 'Neuer', 500000)
 my_company.add_employees(employee1)
-employee2 = Employe('Harry', 'Potter', 4000000)
+employee2 = Employe('Harry', 'Potter', 400000)
 my_company.add_employees(employee2)
 employee3 = Employe('Christian', 'Klein', 700000)
 my_company.add_employees(employee3)
