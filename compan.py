@@ -17,7 +17,7 @@ class Company:
             print('--------------------')
            
 my_company = Company()
-employee1 = Employe('Manuel', 'Neuer', 500000)
+employee1 = Employe('Manuel', 'Neuer', 50000)
 my_company.add_employees(employee1)
 employee2 = Employe('Harry', 'Potter', 400000)
 my_company.add_employees(employee2)
