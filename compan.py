@@ -19,9 +19,9 @@ class Company:
 my_company = Company()
 employee1 = Employe('Manuel', 'Neuer', 5000)
 my_company.add_employees(employee1)
-employee2 = Employe('Harry', 'Potter', 400000)
+employee2 = Employe('Harry', 'Potter', 40000)
 my_company.add_employees(employee2)
-employee3 = Employe('Christian', 'Klein', 700000)
+employee3 = Employe('Christian', 'Klein', 70000)
 my_company.add_employees(employee3)
 
 my_company.employees_display()
