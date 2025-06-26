@@ -4,7 +4,7 @@ if calculation == '+':
         return a + c
     first_num = float(input('Please enter the first number:\n'))
     if not isinstance(first_num, (int, float)):
-        print('Invalid input! Please enter numbers only!')
+        print('Invalid input! Please enter numbers only!!!')
     second_num = float(input('Please enter the second number:\n'))
     result = a(first_num, second_num)
     print('The result of', first_num, calculation, second_num, 'is', result)      
