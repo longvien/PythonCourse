@@ -1,7 +1,7 @@
 calculation = input('Please choose a calculation symbol - + : * ex: choose - if u need minus, + when u need plus!\n')
 if calculation == '+':
-    def a(a, c):
-        return a + c
+    def a(a, b):
+        return a + b
     first_num = float(input('Please enter the first number:\n'))
     if not isinstance(first_num, (int, float)):
         print('Invalid input! Please enter numbers only')
