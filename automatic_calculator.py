@@ -28,4 +28,4 @@ elif calculation == ':':
     result = a(first_num, second_num)
     print('The result of', first_num, calculation, second_num, 'is', result)
 else:
-    print('Invalid calculation symbol!')
+    print('Invalid calculation symbol!') 

@@ -1,3 +1,8 @@
-age = int(input('How old are you?\n'))
-decades = age // 10
-print('You are', str(decades), 'decades old.')
+import random
+computer_choice = random.choice(['rock', 'paper', 'scissors'])
+player_choice  = input('Enter your choice: rock, papaer or scissors?\n')
+if player_choice == computer_choice:
+    print('Draw!')
+elif computer_choice == 'rock' and  player_choice == 'paper':
+    print('You win!')
+
