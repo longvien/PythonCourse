@@ -5,4 +5,8 @@ if player_choice == computer_choice:
     print('Draw!, computer choice is', computer_choice)
 elif computer_choice == 'rock' and  player_choice == 'paper':
     print('You win! Computer choice is', computer_choice)
+elif computer_choice == 'rock' and player_choice == 'scissors':
+    print('You lose! Computer choice is', computer_choice)
+elif computer_choice == 'paper' and player_choice == 'scissors':
+    print('You win! Computer choice is', computer_choice)
 
