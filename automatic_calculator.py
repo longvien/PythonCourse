@@ -1,4 +1,4 @@
-calculation = input('Please choose a calculation symbol - + : * ex: choose - if u need minus, + when u need plus!\n')
+calculation = input('Please choose a calculation symbol - + : * ex: choose - if u need minus, + when u need plus!!\n')
 if calculation == '+':
     def a(a, b):
         return a + b
