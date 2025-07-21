@@ -17,7 +17,7 @@ def convert_C_F(number):
 
 choice = input('In which direction would u like to convert? °F to °C or conversely?\n')
 if choice == '°F to °C' or choice == 'F to C':
-    measure = '°'
+    measure = '°C'
 elif choice == '°C to °F' or choice == 'C to F':
     measure = '°F'
 choices = {
