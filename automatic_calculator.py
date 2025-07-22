@@ -1,4 +1,4 @@
-def add(a, b):
+def addition(a, b):
     return a + b   
 def minus(a, b):
     return a - b
@@ -7,7 +7,7 @@ def multiply(a, b):
 def divide(a, b):
     return a/b
 symbol = {
-    '+': add,
+    '+': addition,
     '-': minus,
     '*': multiply,
     '/': divide
