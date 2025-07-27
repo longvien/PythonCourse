@@ -1,8 +1,14 @@
-
-city = input('Pls enter a city that u want to see the weather forecast\n')
-import requests
-link = "http://api.weatherapi.com/v1/current.json?key=49e46da730864097922165451250402&q=" + city + "&aqi=no"
-response = requests.get(link)
-data = response.json()
-temp = data.get('current').get('temp_c')
-print("It's now in", city, temp, "°C")
+class Employee:
+    def __init__(self, first_name, last_name, salary):
+        self.fname = first_name
+        self.lname = last_name
+        self.income = salary
+    def calculate_salary(self):
+        return self.income/52
+class Company:
+    def __init__(self):
+        self.workers = []
+    def add_workes(self, new_worker):
+        self.workers.append(new_worker)
+    def print_workers(self):
+        print('Current Workers: ')
