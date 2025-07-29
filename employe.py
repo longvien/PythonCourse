@@ -24,7 +24,10 @@ class Company:
 
 try:
     number = int(input("Enter a number of employees:\n")) 
-except ValueError or number <= 0:
+    if number <= 0:
+        print("Please enter a valid number!")
+        exit()
+except ValueError:
     print("Please enter a valid number!")
     exit()
 else:
@@ -34,7 +37,10 @@ else:
         l_name = input('Enter employee last name:\n')
         try:
             salary = float(input('Enter employee yearly salary:\n'))
-        except ValueError or salary <= 0:
+            if salary <= 0:
+                print("Please enter a valid number!")
+                exit()
+        except ValueError:
             print("Please enter a valid number!")
             exit()
         else:
