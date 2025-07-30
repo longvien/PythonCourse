@@ -37,8 +37,17 @@ class Dog(Robot):
     # Overriding the eat method from Robot class
     def eat(self): # Programm will run this method instead of the one in Robot class
         print("I love dog food! Buy me some and be quick, i'm starving!")
-
+class Cat(Robot):
+    def make_sound(self):
+        print('Meow! Meow!')
+    def eat(self):
+        print("I love cat food! Buy me some and be quick, i'm starving!")
 my_dog = Dog('Robodog')
 my_dog.walk(8)
 my_dog.bark()
 my_dog.eat()
+
+my_cat = Cat('Robocat')
+my_cat.walk(5)
+my_cat.make_sound()
+my_cat.eat()
