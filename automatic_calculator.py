@@ -5,6 +5,8 @@ def minus(a, b):
 def multiply(a, b):
     return a * b
 def divide(a, b):
+    if b == 0:
+       raise ZeroDivissionError("Can't be divided by zero")
     return a/b
 symbol = {
     '+': addition,
