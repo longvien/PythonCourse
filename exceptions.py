@@ -17,9 +17,6 @@ print('---------------------')
 print('Program continues')
 
 
-
-
-
 # raise an exception
 
 # def remainder_calculating(a, b):
