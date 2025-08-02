@@ -5,14 +5,16 @@ def minus(a, b):
 def multiply(a, b):
     return a * b
 def divide(a, b):
-    return a/b
+    if b == 0:
+        raise ZeroDivisionError("Can't be divide by zero")
+    return a/b 
 symbol = {
     '+': addition,
     '-': minus,
     '*': multiply,
-    '/': divide
+    ':': divide
 }
-calculation_symbol = input('Please enter the calculation_symbol: +, -, *, / \n')
+calculation_symbol = input('Please enter the calculation_symbol: +, -, *, : \n')
 if calculation_symbol in symbol:
     first_num = int(float(input('Please enter the first number:\n')))
     second_num = int(float(input('Please enter the second number:\n')))
