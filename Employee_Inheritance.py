@@ -7,7 +7,7 @@ class SalaryEmployee(Employee):
         super().__init__(f_name, l_name)
         self.salary = salary
     def calculate_salary(self):
-        return self.salary/52   
+        return self.salary/12   
 class HourlyEmployee(Employee):
     def __init__(self, f_name, l_name, weekly_hours, hourly_rate):
         super().__init__(f_name, l_name)
