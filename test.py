@@ -24,4 +24,11 @@ class Commission_Employee(SalaryEmployee):
         regular = super().calculate_salary()
         commission = self.c_rate * self.c_c
         return regular + commission
+    
+class Company:
+    def __init__(self):
+        self.employees = []
+    def add_employee(self, new_employee):
+        self.employees.append(new_employee)
+
      
