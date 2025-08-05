@@ -30,5 +30,33 @@ class Company:
         self.employees = []
     def add_employee(self, new_employee):
         self.employees.append(new_employee)
+    def display_employee(self):
+        print('Current Employees:')
+        for i in self.employees:
+            print(i.f_name, i.l_name)
+        print('----------------------------------------')
+    def paycheck_salary(self):
+        for i in self.employees:
+            print('The paycheck of employee: ' + i.f_name + ' ' + i.l_name + ' is ' + str(i.calculate_salary()))
+        print('----------------------------------------')
 
-     
+try: 
+    number = input('Please enter a number of new Employees!\n')
+except:
+    print('Pls enter a valid number')
+
+my_company = Company()
+for i in range(number): 
+    fname = input('Enter employee first name.\n')
+    lname = input('Enter employee last name.\n')
+    salary_type = input('Pls enter the paycheck type: Monthly, Hourly, or Commision?\n')
+type = {'Monthly': SalaryEmployee, 
+        'Hourly': HourlyEmployee,
+        'Commision': Commission_Employee}
+
+employee1 = SalaryEmployee('Va', 'Schulze', 1000)
+my_company.add_employee(employee1)
+employee2 = HourlyEmployee('Elon', 'Musk', 800, 250)
+my_company.add_employee(employee2)
+my_company.display_employee()
+my_company.paycheck_salary()
