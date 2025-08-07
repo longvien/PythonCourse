@@ -24,7 +24,6 @@ class Commission_Employee(SalaryEmployee):
         regular = super().calculate_salary()
         commission = self.c_rate * self.c_c
         return regular + commission
-    
 class Company:
     def __init__(self):
         self.employees = []
@@ -40,6 +39,7 @@ class Company:
             print('The paycheck of employee: ' + i.f_name + ' ' + i.l_name + ' is $' + str(i.calculate_salary()))
         print('----------------------------------------')
 
+#Main Program
 def main():
     try: 
         number = int(input('Please enter a number of new Employees!\n'))
