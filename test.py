@@ -1,4 +1,4 @@
-def greeting():
+def greeting(name):
     print('Hi', name + '!')
-name = input("What's your name?\n")
-greeting()
+iname = input("What's your name?\n")
+greeting(iname)
