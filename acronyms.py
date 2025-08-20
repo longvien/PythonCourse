@@ -23,7 +23,7 @@ def add_acronym():
 
 
 def main():
-    choice = input('Would you like to find(F) or add(A) an  acronym?\n')
+    choice = input('Would you like to find(F or add(A) an  acronym?\n')
     if choice == 'A':
         add_acronym()
     elif choice == 'F':
