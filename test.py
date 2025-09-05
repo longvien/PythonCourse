@@ -1,6 +1,6 @@
 class ROBO:
-    def __init__(self, name):
-        self.name = name
+    def __init__(self, nam):
+        self.name = nam
     def display(self):
           print('HI, I am ' + self.name)
     
