@@ -1,35 +1,29 @@
 def find_acronym():
-    look_up = input('Which software acronym do you want to look up?\n')
-    found = False 
-    with open('input.txt') as file:
-        for line in file:
-            if look_up in line:
-                print(line)
-                found = True
-                break
-        if not found: 
-            print('Acronym not found!')
-
-    #Dòng found = False được dùng để đánh dấu rằng chưa tìm thấy dòng chứa từ khóa look_up. 
-    # Nếu sau khi duyệt xong toàn bộ file mà không tìm thấy dòng phù hợp, 
-    # biến found vẫn là False, từ đó bạn có thể in "Acronym not found!".
-
-
-def add_acronym():
-    acronym = input('Which acronym would u like to input?\n')
-    definition = input("What's the definition of the acronym?\n")
+    look_up = input('Which acronym would you like to find out the meaning?\n')
+    found = False
+    try:
+        with open('input.txt') as file:
+            for line in file:
+                if look_up in line:
+                    print(line)
+                    found = True
+                    break
+            if not found:
+                print("Acronym doesn't exist! Pls try again!")
+    except FileNotFoundError as e:
+        print('File not found!')
+def append_acronym():
+    acronym = input('Pls enter the acronym!\n')
+    definition = input('Pls enter the definition\n')
     with open('input.txt', 'a') as file:
-        file.write(acronym + ' => ' + definition + '\n')
-
-
+        file.write(acronym + ' - ' + definition)
 def main():
-    choice = input('Would you like to find(F) or add(A) an  acronym?\n')
-    if choice == 'A':
-        add_acronym()
-    elif choice == 'F':
+    user_choice = input('Do u want to find(F) or add(A) an acronym?\n')
+    if user_choice == 'A':
+        append_acronym()
+    elif user_choice == 'F':
         find_acronym()
+    else:
+        print('Invalid choice!')
+        exit()
 main()
-
-
-
-
