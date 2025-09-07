@@ -8,10 +8,11 @@ def find_acronym():
                     print(line)
                     found = True
                     break
-            if not found:
-                print("Acronym doesn't exist! Pls try again!")
     except FileNotFoundError as e:
         print('File not found!')
+        return #return out of the file => codes end
+    if not found:
+        print("Acronym doesn't exist! Pls try again!")
 def append_acronym():
     acronym = input('Pls enter the acronym!\n')
     definition = input('Pls enter the definition\n')
