@@ -25,4 +25,4 @@ for file_name in os.listdir(desktop_path):
                 if file_name.endswith(extension):
                     destination_folder = os.path.join(desktop_path, folder_name)
                     print(original_file_path, destination_folder)
-                    #shutil.move(original_file_path, destination_folder)
+                    shutil.move(original_file_path, destination_folder)

@@ -15,3 +15,5 @@ for entry in os.scandir(folder_original):
 
 
 
+
+
