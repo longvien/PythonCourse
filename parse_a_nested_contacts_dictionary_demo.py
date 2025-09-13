@@ -7,6 +7,6 @@ contacts = {
         {'name': 'Tony Kroos', 'email': 'tonykroos@example.de'},
         {'name': 'Kai Havert', 'email': 'kaihavert@example.de'}]
 }
-print('Student emails: ')
+print('Student name & emails: ')
 for student in contacts['students']:
-    print(student['email'])
+    print(student['name'], ':', student['email'])
