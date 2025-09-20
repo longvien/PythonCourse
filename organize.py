@@ -5,7 +5,7 @@ desktop_path = os.path.expanduser("~/Desktop")
 
 # Define folders and extensions
 folders = {
-    "Images": [".jpg", ".jpeg", ".png", ".gif", ".bmp", ".tiff"],
+    "Images": [".jpg", ".jpeg", ".png", ".gif", ".bmp", ".tif"],
     "Documents": [".pdf", ".doc", ".docx", ".txt", ".ppt", ".pptx", ".xls", ".xlsx"],
     "Archives": [".zip", ".rar", ".tar", ".gz", ".7z"],
 }
