@@ -12,4 +12,4 @@ menu = [
 ['d', 'e', 'f'],
  ['g', 'h', 'i']
 ]
-print(menu)
+print(menu[1])
