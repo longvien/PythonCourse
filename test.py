@@ -4,8 +4,8 @@ menu = {
     'Dinner': ['g', 'h', 'i']
 }
 
-for a, i in menu.items():
-    print(a, ':', i)
+for type, food in menu.items():
+    print(type, ':', food)
 
 menu = [
 ['a', 'b', 'c'],
