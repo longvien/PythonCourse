@@ -5,4 +5,4 @@
 fruits = ['watermelon', 'cherry']
 
 for i in range(5):#added by myself
-    print(fruits[0])
+    print(fruits)
