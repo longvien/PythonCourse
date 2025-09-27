@@ -6,5 +6,5 @@ class Calculation:
         self.nums = []
         for i in range(self.second):
             self.nums.append(self.first)
-        for i in self.nums:
+        for i in self.nums():
                 
