@@ -5,6 +5,7 @@ class Calculation:
     def calculate(self):
         self.nums = []
         for i in range(self.second):
-            self.nums.append(self.firs\t)
+            self.nums.append(self.first)
+
 
                 
