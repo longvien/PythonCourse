@@ -3,9 +3,9 @@ class Calculation:
         self.first = first_num
         self.second = second_num
     def calculate(self):
-        self.nums = []
-        for i in range(self.second):
-            self.nums.append(self.first)
+        return self.first + self.second
+    def display(self):
+        print(calculate)
 
 first_num = int(float(input('Pls enter the first number:\n')))
 second_num = int(float(input('Pls enter the second number:\n')))
