@@ -66,6 +66,7 @@ def main():
                 raise ValueError('Pls enter a valid hour!')
             employee = HourlyEmployee(fname, lname, hourly_income, hour_worked)
             my_company.add_employee(employee)
+        
         elif salary_type == 'Commission':
             salary = int(float(input("Please enter the employee's yearly salary:\n")))
             commision_rate = int(float((input('Pls enter the commision rate:\n'))))
