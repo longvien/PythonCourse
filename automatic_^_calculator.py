@@ -7,7 +7,7 @@
 # first_num = int(float(input('Pls enter the first number:\n')))
 # second_num = int(float(input('Pls enter the second number:\n')))
 # calculate = Calculation(first_num, second_num)
-# calculate.calculate(first_num, second_num) # type: ignore
+# calculate.calculate(first_num, second_num) 
 
 def addition(a, b):
     return a + b
