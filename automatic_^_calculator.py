@@ -7,7 +7,11 @@
 # first_num = int(float(input('Pls enter the first number:\n')))
 # second_num = int(float(input('Pls enter the second number:\n')))
 # calculate = Calculation(first_num, second_num)
+<<<<<<< HEAD
 # calculate.calculate(first_num, second_num)
+=======
+# calculate.calculate(first_num, second_num) 
+>>>>>>> fa93356c9eaa94971ea7c48ef39e0827f93319e2
 
 def addition(a, b):
     return a + b
