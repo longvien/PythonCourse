@@ -1,15 +1,8 @@
 menu = {
-    'Breakfast': ['a', 'b', 'c'],
-    'Lunch': ['d', 'e', 'f'],
-    'Dinner': ['g', 'h', 'i']
+    'a': 'apple',
+    'b': 'banana'
 }
 
 for type, food in menu.items():
     print(type, ':', food)
 
-menu = [
-['a', 'b', 'c'],
-['d', 'e', 'f'],
- ['g', 'h', 'i']
-]
-print(menu)
