@@ -6,3 +6,6 @@ menu = {
 for type, food in menu.items():
     print(type, ':', food)
 
+
+
+

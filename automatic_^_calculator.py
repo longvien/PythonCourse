@@ -9,9 +9,9 @@
 # calculate = Calculation(first_num, second_num)
 # calculate.calculate(first_num, second_num)
 
-def addition(a, b):
-    return a + b
-num1 = int(float(input('Enter num 1:\n')))
-num2 = int(float(input('Enter num 2:\n')))
-result = addition(num1, num2)
-print(result)
+#def addition(a, b):
+#    return a + b
+#num1 = int(float(input('Enter num 1:\n')))
+#num2 = int(float(input('Enter num 2:\n')))
+#result = addition(num1, num2)
+#print(result)
