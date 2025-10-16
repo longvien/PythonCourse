@@ -22,7 +22,7 @@ print('The result of', first_num, '+', second_num, 'is', calculate.calculate())
 # first_num = int(float(input('Pls enter the first number:\n')))
 # second_num = int(float(input('Pls enter the second number:\n')))
 # calculate = Calculation(first_num, second_num)
-# print('The result of', first_num, '+', second_num, 'is', calculate.calculate())
+# print('The result of', first_num, '+', second_num, 'is', calculate.calculate()
 
 
 # class Calculation:
