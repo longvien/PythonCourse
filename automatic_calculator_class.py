@@ -16,13 +16,13 @@ class Subtraction(Calculation):
 class Multiplication(Calculation):
     def __init__(self, first_num, second_num):
         super().__init__(first_num, second_num)
-        if second_num == 0:
-            raise ZeroDivisionError("Can't be divided by zero")
     def calculate(self):
         return self.first * self.second
 class Division(Calculation):
     def __init__(self, first_num, second_num):
         super().__init__(first_num, second_num)
+        if second_num == 0:
+            raise ZeroDivisionError("Can't be divided by zero")
     def calculate(self):
         return self.first / self.second
 
