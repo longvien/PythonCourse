@@ -2,20 +2,13 @@ class Calculation:
     def __init__(self, first_num, second_num):
         self.first = first_num
         self.second = second_num
-    
 class Addition(Calculation):
-    def __init__(self, first_num, second_num):
-        super().__init__(first_num, second_num)
     def calculate(self):
         return self.first + self.second
 class Subtraction(Calculation):
-    def __init__(self, first_num, second_num):
-        super().__init__(first_num, second_num)
     def calculate(self):
         return self.first - self.second
 class Multiplication(Calculation):
-    def __init__(self, first_num, second_num):
-        super().__init__(first_num, second_num)
     def calculate(self):
         return self.first * self.second
 class Division(Calculation):
@@ -38,9 +31,6 @@ if symbol in cal_symbols:
     first_num = int(float(input('Pls enter the first number:\n')))
     second_num = int(float(input('Pls enter the second number:\n')))
     calculate = cal_symbols[symbol](first_num, second_num)
-    # if calculate.calculate()%2:
-    #     print('The result of', first_num, symbol , second_num, 'is', int(calculate.calculate()))
-    # else:
     print('The result of', first_num, symbol , second_num, 'is', float(calculate.calculate()))
 else:
     print("The option you chose doesn't exist. Pls try again!")
