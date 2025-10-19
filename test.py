@@ -1,11 +1,52 @@
-menu = {
-    'a': 'apple',
-    'b': 'banana'
-}
+# menu = {
+#     'a': 'apple',
+#     'b': 'banana'
+# }
 
-for type, food in menu.items():
-    print(type, ':', food)
+# definition = 'I like' + ' a ' + 'and' + ' b.'
+# translation = 'I like ' + menu.get('a') + ' and ' + menu.get('b') # type: ignore
+
+# print(definition)
+# print(translation)
 
 
+# def greeting(name):
+#     print('Hello' + name)
+# i_name = input('Pls enter your name\n')
+# greeting(i_name)
 
+# def greeting():
+#     print('Hello' + name)
+# name = input('Pls enter your name\n')
+# greeting()
+
+# class Greeting:
+#     def __init__(self, first_name, last_name):
+#         self.fname = first_name
+#         self.lname = last_name
+#     def greeting(self):
+#         print('Hello' + str(self.fname) + ' ' + str(self.lname))
+# f_name = input('Enter fname\n')
+# l_name = input('Enter lnmae\n')
+# intro = Greeting(f_name, l_name)
+# intro.greeting()
+
+# expenses = []
+# num_expenses = int(input('Pls enter an number of expenses!\n'))
+# for i in range(num_expenses):
+#     new = expenses.append(int(input('Enter an expense:\n')))
+# for expense in expenses:
+#     total = sum(expenses)
+# print(total)
+
+# import random
+
+# choices = random.randint(1,6)
+
+# print(choices)
+
+# import requests
+
+# response = requests.get()
+# json = response.json()
 
