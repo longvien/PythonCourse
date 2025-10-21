@@ -76,7 +76,7 @@ def main():
                 employee = Commission_Employee(fname, lname, commision_rate, commision_completed, salary) # type: ignore
                 my_company.add_employee(employee)
             else:
-                print('Pls check again your spelling or input the right type of salary')
+                print('Pls check again your spelling or input the right type of salary!')
                 exit()
             
             my_company.display_employee()
