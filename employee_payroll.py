@@ -43,44 +43,45 @@ class Company:
 def main():
     try: 
         number = int(input('Please enter a number of new Employees!\n'))
+
+        my_company = Company()
+        for i in range(number): 
+            fname = input('Enter employee first name:\n')
+            lname = input('Enter employee last name:\n')
+            salary_type = input('Pls enter the paycheck type: Monthly, Hourly, or Commission?\n')
+            if salary_type == 'Monthly':
+                salary = int(float(input("Please enter the employee's yearly salary:\n")))
+                if salary <= 0:
+                    raise ValueError('Pls enter a valid salary!')
+                employee = SalaryEmployee(fname, lname, salary)
+                my_company.add_employee(employee)
+            elif salary_type == 'Hourly':
+                hourly_income = int(float((input('Pls enter the hourly income:\n'))))
+                if hourly_income <= 0:
+                    raise ValueError('Pls enter a valid salary!')
+                hour_worked = int(float((input('Pls enter the hour that the employee had worked in a year:\n'))))
+                if hour_worked <= 0:
+                    raise ValueError('Pls enter a valid hour!')
+                employee = HourlyEmployee(fname, lname, hourly_income, hour_worked)
+                my_company.add_employee(employee)
+            
+            elif salary_type == 'Commission':
+                salary = int(float(input("Please enter the employee's yearly salary:\n")))
+                commision_rate = int(float((input('Pls enter the commision rate:\n'))))
+                if commision_rate <= 0:
+                    raise ValueError('Pls enter a valid rate!')
+                commision_completed = int(float((input('Pls enter the completed Commission!\n'))))
+                if commision_completed <= 0:
+                    raise ValueError('Pls enter a valid commision completed')
+                employee = Commission_Employee(fname, lname, commision_rate, commision_completed, salary) # type: ignore
+                my_company.add_employee(employee)
+            else:
+                print('Pls check again your spelling or input the right type of salary')
+                exit()
+            
+            my_company.display_employee()
+            my_company.paycheck_salary()
     except:
         print('Pls enter a valid number')
 
-    my_company = Company()
-    for i in range(number):  # type: ignore
-        fname = input('Enter employee first name:\n')
-        lname = input('Enter employee last name:\n')
-        salary_type = input('Pls enter the paycheck type: Monthly, Hourly, or Commission?\n')
-        if salary_type == 'Monthly':
-            salary = int(float(input("Please enter the employee's yearly salary:\n")))
-            if salary <= 0:
-                raise ValueError('Pls enter a valid salary!')
-            employee = SalaryEmployee(fname, lname, salary)
-            my_company.add_employee(employee)
-        elif salary_type == 'Hourly':
-            hourly_income = int(float((input('Pls enter the hourly income:\n'))))
-            if hourly_income <= 0:
-                raise ValueError('Pls enter a valid salary!')
-            hour_worked = int(float((input('Pls enter the hour that the employee had worked in a year:\n'))))
-            if hour_worked <= 0:
-                raise ValueError('Pls enter a valid hour!')
-            employee = HourlyEmployee(fname, lname, hourly_income, hour_worked)
-            my_company.add_employee(employee)
-        
-        elif salary_type == 'Commission':
-            salary = int(float(input("Please enter the employee's yearly salary:\n")))
-            commision_rate = int(float((input('Pls enter the commision rate:\n'))))
-            if commision_rate <= 0:
-                raise ValueError('Pls enter a valid rate!')
-            commision_completed = int(float((input('Pls enter the completed Commission!\n'))))
-            if commision_completed <= 0:
-                raise ValueError('Pls enter a valid commision completed')
-            employee = Commission_Employee(fname, lname, commision_rate, commision_completed, salary) # type: ignore
-            my_company.add_employee(employee)
-        else:
-            print('Pls check again your Spelling or input the right type of salary')
-            exit()
-
-    my_company.display_employee()
-    my_company.paycheck_salary()
 main()

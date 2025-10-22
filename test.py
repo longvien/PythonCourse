@@ -31,22 +31,8 @@
 # intro = Greeting(f_name, l_name)
 # intro.greeting()
 
-# expenses = []
-# num_expenses = int(input('Pls enter an number of expenses!\n'))
-# for i in range(num_expenses):
-#     new = expenses.append(int(input('Enter an expense:\n')))
-# for expense in expenses:
-#     total = sum(expenses)
-# print(total)
-
-# import random
-
-# choices = random.randint(1,6)
-
-# print(choices)
-
-# import requests
-
-# response = requests.get()
-# json = response.json()
-
+meatPrice = 4.00
+meatTax = 0.03 * meatPrice
+milkPrice = 2.00
+milkTax = 0.03 * milkPrice
+print(meatTax + meatPrice + milkTax + meatPrice)
