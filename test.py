@@ -29,4 +29,4 @@
 # f_name = input('Enter fname\n')
 # l_name = input('Enter lnmae\n')
 # intro = Greeting(f_name, l_name)
-# intro.greeting()
+# intro.greeting(
